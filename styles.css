@@ -1,3 +1,59 @@
-body{
-    background-color: black;
+
+:root{
+    --nav-color: #f2f3f5;
+    --nav-select-color: #0563bb;
+}
+*{
+    margin: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;
+    left: 0;
+    top: 24%;
+}
+nav ul{
+    padding-left: 1rem;
+}
+
+nav ul li{
+    list-style: none;
+    background-color: var(--nav-color);
+    margin: .5rem 0;
+    padding: .8rem;
+    border-radius: 30px;
+    width: 1.6rem;
+
+}
+
+nav ul li:hover{
+    background-color: var(--nav-select-color);
+    width: 5rem;
+    border-radius: 30px;
+    transition-duration: .5s;
+}
+nav ul li:hover > .material-symbols-outlined{
+    color: white;
+    transition-duration: .5s;
+}
+.material-symbols-outlined{
+    color: black;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
+.current > #navul li{
+    background-color: pink;
+}
+
+main{
+}
+main div{
+    height: 100vh;
+    text-align: center;
+
 }
